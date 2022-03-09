@@ -1,0 +1,20 @@
+@import "_colors";
+
+details {
+  summary {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    list-style: none;
+    text-align: center;
+    background: $highlight-bg;
+    border-bottom: thin solid $highlight;
+    color: $highlight;
+    font-size: large;
+    cursor: pointer;
+  }
+}
+details[open] {
+  background: $highlight;
+  > *:not(summary) {
+    padding: 0.5rem;
+  }
+}

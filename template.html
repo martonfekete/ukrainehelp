@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{META_DESCRIPTION}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="{{TITLE}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="ukrainehelp.hu" />
+    <meta property="og:image" content="{{IMG_SRC}}/banner.jpg" />
+
+    <link rel="stylesheet" href="{{CSS_SRC}}/normalize.css" />
+    <link rel="stylesheet" href="{{CSS_SRC}}/main.css" />
+    <link rel="stylesheet" href="{{CSS_SRC}}/style.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body onclick="expandLang('none', event)">
+    <nav>
+      <ul role="navigation">
+        <li>
+          <a
+            href="https://www.facebook.com/ukrainehelpHU"
+            target="_blank"
+            label="{{FACEBOOK_HELP}}"
+            style="display: inline-flex"
+          >
+            <img
+              src="{{IMG_SRC}}/fb.svg"
+              width="20"
+              style="margin-right: 5px"
+            />
+            {{FACEBOOK_HELP}}</a
+          >
+        </li>
+      </ul>
+      <div id="lang">
+        <button onclick="event.stopPropagation(); expandLang()" id="lang-btn">
+          <img src="{{IMG_SRC}}/globe.svg" aria-hidden="true" />
+          <span>{{CURRENT_LANG}}</span>
+        </button>
+        <ul aria-expanded="false">
+          <li>
+            <a href="/hu">{{LANG_HU}}</a>
+          </li>
+          <li>
+            <a href="/">{{LANG_EN}}</a>
+          </li>
+          <li>
+            <a href="/uk">{{LANG_UK}}</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="centered vertical">
+        <h1>{{TITLE}}</h1>
+        <p>{{INTRO}}</p>
+        <div class="timestamp">{{TIMESTAMP}}<br />[[TIMESTAMP]]</div>
+      </section>
+      <section>[[WELCOME]]</section>
+      <section>
+        <h2>{{HELP_WITH}}</h2>
+        [[CONTENT]]
+      </section>
+
+      <section id="links" class="centered vertical">
+        <h2>{{USEFUL_LINKS}}</h2>
+        <div class="centered">
+          <a class="btn highlight" href="{{HELP_TRANSPORT_BKK_TIMETABLE_URL}}"
+            >{{HELP_TRANSPORT_BKK}}</a
+          >
+          <a class="btn highlight" href="{{HELP_TRANSPORT_AIR_BUD_URL}}"
+            >{{HELP_TRANSPORT_AIR_BUD}}</a
+          >
+        </div>
+      </section>
+
+      <section class="centered">
+        <h2>{{ORGS}}</h2>
+        <div class="centered">
+          <a
+            class="highlight btn"
+            href="https://www.facebook.com/migrationaid.org/"
+            >{{ORGS_MIGRATION_AID}}</a
+          >
+          <a class="highlight btn" href="https://maltai.hu/">{{ORGS_MALTAI}}</a>
+          <a
+            class="highlight btn"
+            href="https://voroskereszt.hu/humanitariusvalsag/"
+            >{{ORGS_REDCROSS}}</a
+          >
+          <a class="highlight btn" href="https://www.facebook.com/baptistaszsk/"
+            >{{ORGS_BAPTIST}}</a
+          >
+          <a
+            class="highlight btn"
+            href="https://www.facebook.com/budapestbikemaffia/"
+            >{{ORGS_BIKE}}</a
+          >
+          <a
+            class="highlight btn"
+            href="https://www.facebook.com/MRSZeretetszolgalat/#"
+            >{{ORGS_REF}}</a
+          >
+          <a class="highlight btn" href="https://www.facebook.com/karitasz/"
+            >{{ORGS_CARITAS}}</a
+          >
+          <a class="highlight btn" href="https://segelyszervezet.hu/"
+            >{{ORGS_OCUMENIC}}</a
+          >
+          <a class="highlight btn" href="http://www.hisz.hu/">{{ORGS_HISZ}}</a>
+          <a class="highlight btn" href="https://helsinki.hu"
+            >{{ORGS_HELSINKI}}</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>{{FOOTER_DISCLAIMER}}</p>
+      <button onclick="event.stopPropagation(); expandImpressum()">
+        {{IMPRESSUM_LABEL}}
+      </button>
+      <div id="impressum">[[IMPRESSUM]]</div>
+    </footer>
+
+    <script>
+      function expandLang(forceVal, e) {
+        const langSelector = document.querySelector("#lang ul");
+        if (forceVal) {
+          langSelector.style.display = forceVal;
+          if (e.target.parentElement.id !== "impressum") {
+            const impressum = document.querySelector("#impressum");
+            impressum.style.display = forceVal;
+          }
+          return;
+        }
+        const currentStyle = langSelector.style.display;
+        langSelector.style.display =
+          currentStyle === "block" ? "none" : "block";
+      }
+
+      function expandImpressum() {
+        const impressum = document.querySelector("#impressum");
+        const currentStyle = impressum.style.display;
+
+        impressum.style.display = currentStyle === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
+</html>

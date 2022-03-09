@@ -1,0 +1,217 @@
+@charset "UTF-8";
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  background-color: #0057b7;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:link, nav li a:hover, nav li a:visited, nav li a:active {
+  color: beige;
+}
+
+#lang button {
+  padding: 1rem;
+  border: none;
+  background: none;
+  color: beige;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+#lang button img {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 5px;
+}
+#lang ul {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  flex-direction: column;
+  display: none;
+  background: #0057b7;
+}
+#lang ul li a {
+  padding: 1rem 0.5rem 1rem 1rem;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #ffd700;
+  z-index: -1;
+}
+
+@media screen and (min-width: 769px) {
+  body:before {
+    background: linear-gradient(180deg, gold 0%, rgba(255, 215, 0, 0.8) 42%, #0057b7 100%);
+  }
+}
+a:link, a:hover, a:visited, a:active {
+  color: #0057b7;
+  text-decoration: none;
+}
+
+main {
+  max-width: 768px;
+  margin: auto;
+  padding: 4rem 0.5rem 0.5rem 0.5rem;
+}
+
+h1,
+h2,
+.center-text {
+  text-align: center;
+}
+
+.highlight {
+  background: #0057b7;
+  color: beige;
+}
+
+.jumbo {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.centered.vertical {
+  flex-direction: column;
+}
+
+.timestamp {
+  position: absolute;
+  z-index: 0;
+  top: 50px;
+  right: 0;
+  padding: 0.25rem;
+  background: #0057b7;
+  text-align: right;
+  color: beige;
+  font-size: 0.75rem;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 0.5rem 0.25rem;
+  background: #0057b7;
+  color: beige;
+  font-size: small;
+  font-style: italic;
+  display: flex;
+}
+footer p {
+  margin: 0;
+  flex-grow: 1;
+  padding: 0 0.5rem 0 0.25rem;
+}
+footer button {
+  padding-left: 1rem;
+  border: none;
+  border-left: thin solid beige;
+  background-color: #0057b7;
+  text-transform: uppercase;
+  color: beige;
+  cursor: pointer;
+}
+footer #impressum {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -0.5rem;
+  padding: 1rem;
+  background-color: #0057b7;
+  border-top: thin solid #ffd700;
+  color: beige;
+  font-style: normal;
+}
+
+@media screen and (min-width: 769px) {
+  footer {
+    background: none;
+  }
+  footer button {
+    background: none;
+  }
+}
+#welcome summary {
+  padding: 1rem inherit;
+}
+
+a.btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: thin solid transparent;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+a.btn.highlight {
+  background: #0057b7;
+  color: beige;
+  font-size: large;
+}
+a.btn.inverted {
+  border: thin solid #ffd700;
+  text-transform: none;
+}
+a[href^="tel:"]:before {
+  content: "✆";
+  margin-right: 0.25rem;
+  font-size: larger;
+}
+
+details summary {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  list-style: none;
+  text-align: center;
+  background: #0057b7;
+  border-bottom: thin solid beige;
+  color: beige;
+  font-size: large;
+  cursor: pointer;
+}
+
+details[open] {
+  background: beige;
+}
+details[open] > *:not(summary) {
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

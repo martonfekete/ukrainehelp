@@ -1,0 +1,26 @@
+@import "_colors";
+
+a {
+  &.btn {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border: thin solid transparent;
+    border-radius: 5px;
+    text-transform: capitalize;
+    &.highlight {
+      background: $highlight-bg;
+      color: $highlight;
+      font-size: large;
+    }
+    &.inverted {
+      border: thin solid $yellow;
+      text-transform: none;
+    }
+  }
+  &[href^="tel:"]:before {
+    content: "✆";
+    margin-right: 0.25rem;
+    font-size: larger;
+  }
+}

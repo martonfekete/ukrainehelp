@@ -1,0 +1,30 @@
+{
+  "name": "refugee-aid",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "license": "",
+  "author": "",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run start\" \"npm run watch-sass\"",
+    "watch-sass": "sass --watch scss/main.scss css/style.css",
+    "start": "http-server",
+    "build": "node ./js/build.js",
+    "build-prd": "node ./js/build.js --prod",
+    "ftp-push": "node ./js/upload.js",
+    "upload": "npm run build-prd && npm run ftp-push"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "csv": "^6.0.5",
+    "dotenv": "^16.0.0",
+    "exec": "^0.2.1",
+    "fs-extra": "^10.0.1",
+    "ftp": "^0.3.10",
+    "google-spreadsheet": "^3.2.0",
+    "http-server": "^14.1.0",
+    "marked": "^4.0.12",
+    "sass": "^1.49.9"
+  }
+}
