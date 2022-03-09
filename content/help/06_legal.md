@@ -1,8 +1,14 @@
-{{HELP_LEGAL_HELSINKI}}
+#### {{HELP_LEGAL_EMBASSY}}
 
-- [ukrainecrisis@helsinki.hu](mailto:ukrainecrisis@helsinki.hu)
-- [facebook.com/helsinkibizottsag](https://facebook.com/helsinkibizottsag)
-- [https://helsinki.hu/](https://helsinki.hu/)
+[+36 1 42 24 124](tel:+3614224124)<br/>
+1125 Budapest<br/>
+Istenhegyi út 84/b, 1125
+
+#### {{HELP_LEGAL_HELSINKI}}
+
+[ukrainecrisis@helsinki.hu](mailto:ukrainecrisis@helsinki.hu)<br/>
+[facebook.com/helsinkibizottsag](https://facebook.com/helsinkibizottsag)<br/>
+[https://helsinki.hu/](https://helsinki.hu/)
 
 {{HELP_LEGAL_BASIC}} (pdf):
 
