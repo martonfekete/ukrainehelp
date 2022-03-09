@@ -58,6 +58,19 @@ const createIndexHtml = () => {
   template = template.replace(/\[\[CONTENT\]\]/g, htmlString);
   console.log("CONTENT replaced");
 
+  console.log("Replacing ORGANIZATIONS...");
+  try {
+    let orgs = fs.readFileSync(`${markdownSource}/organizations.md`, "utf-8");
+    template = template.replace(
+      /\[\[ORGANIZATIONS\]\]/g,
+      marked.parse(orgs).replace("<p>", '<p class="centered">')
+    );
+    console.log("ORGANIZATIONS replaced");
+  } catch (e) {
+    console.log("Error replacing ORGANIZATIONS");
+    console.log(e);
+  }
+
   console.log("Replacing TIMESTAMP...");
   const time = new Date();
   const timeString = `${time.toLocaleDateString(
