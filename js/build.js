@@ -100,4 +100,6 @@
   console.log("Copying images...");
   fse.copySync(path.resolve(__dirname, "../img"), `${distPath}/img`);
   console.log(`Images copied to ${distPath}/img`);
+
+  fs.unlinkSync(source);
 })();

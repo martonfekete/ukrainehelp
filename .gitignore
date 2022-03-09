@@ -8,7 +8,7 @@ dist
 .htaccess
 *.code-workspace
 css/*.map
-index.html
+/index.html
 js/ftp
 .env
 .npmrc
