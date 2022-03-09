@@ -54,9 +54,14 @@
           </script>`;
         updatedText = updatedText.replace("</head>", `${analyticsCode}</head>`);
 
+        console.log("Adding additional META");
+        const meta = `
+        <meta name="facebook-domain-verification" content="gwgl7pgvc3rj2ywtxwxve2y3xi1d99" />`;
+        updatedText = updatedText.replace("[[META]]", meta);
+
         console.log("Adding Facebook pixel");
         const pixelCode = `
-          <!-- Meta Pixel Code -->
+        <!-- Meta Pixel Code -->
           <script>
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
