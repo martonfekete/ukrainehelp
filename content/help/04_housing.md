@@ -2,12 +2,16 @@
 
 {{HELP_HOUSING_SHELTER}}: [https://shelterukr.com/](https://shelterukr.com/)
 
+{{HELP_HOUSING_SUPPORT_UKR_TITLE}}:<br/>
+{{HELP_HOUSING_SUPPORT_UKR}}
+[{{HELP_HOUSING_SUPPORT_UKR_LINK}}]({{HELP_HOUSING_SUPPORT_UKR_URL}})
+
 {{HELP_HOUSING_LONG_TERM}} [{{HELP_HOUSING_LONG_TERM_LINK}}](https://ukrajna.ingatlan.com/)
 
 {{HELP_HOUSING_SZALLAS}} [{{HELP_HOUSING_SZALLAS_LINK}}](https://szallas.hu/menedek-ukrajnai-menekulteknek)
 
-{{HELP_HOUSING_APPS}}
+{{HELP_HOUSING_APPS}}:
 
-- AirBnb
-- Booking
-- Szállás.hu
+- [Szállás.hu](https://szallas.hu/menedek-ukrajnai-menekulteknek)
+- [AirBnb](https://www.airbnb.com/)
+- [Booking](https://booking.com)

@@ -8,6 +8,8 @@
 
 {{HELP_HOUSING_SHELTER}}: [https://shelterukr.com/](https://shelterukr.com/)
 
+{{HELP_HOUSING_SUPPORT_UKR_TITLE}}: [{{HELP_HOUSING_SUPPORT_UKR_LINK}}]({{HELP_HOUSING_SUPPORT_UKR_URL}})
+
 ### {{HELP_TRANSPORT_BKK}}
 
 {{HELP_TRANSPORT_BKK_TICKETS}}
@@ -26,3 +28,8 @@
 
 [btn\_{{HELP_TRANSPORT_AIR_BUD}}]({{HELP_TRANSPORT_AIR_BUD_URL}})
 [btn\_{{HELP_TRANSPORT_AIR_DEB}}]({{HELP_TRANSPORT_AIR_DEB}})
+
+### {{WELCOME_FACEBOOK}}
+
+[btn\_{{FACEBOOK_HELP}}](https://www.facebook.com/groups/994143548136400)
+[btn\_{{WELCOME_FACEBOOK_GROUP_LINK}}](https://www.facebook.com/groups/994143548136400)
