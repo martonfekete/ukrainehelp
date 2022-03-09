@@ -6,13 +6,14 @@
   "license": "",
   "author": "",
   "scripts": {
-    "dev": "concurrently --kill-others \"npm run start\" \"npm run watch-sass\"",
-    "watch-sass": "sass --watch scss/main.scss css/style.css",
-    "start": "http-server",
+    "start": "concurrently --kill-others \"npm run build:watch\" \"npm run dev\" \"npm run sass:watch\"",
+    "sass:watch": "sass --watch scss/main.scss css/style.css",
+    "dev": "http-server -o /dist/en",
     "build": "node ./js/build.js",
-    "build-prd": "node ./js/build.js --prod",
+    "build:watch": "nodemon ./js/build.js -e js,html,md,css --ignore index.html --ignore dist/",
+    "build:prod": "node ./js/build.js --prod",
     "ftp-push": "node ./js/upload.js",
-    "upload": "npm run build-prd && npm run ftp-push"
+    "upload": "npm run build:prod && npm run ftp-push"
   },
   "dependencies": {},
   "devDependencies": {
@@ -25,6 +26,7 @@
     "google-spreadsheet": "^3.2.0",
     "http-server": "^14.1.0",
     "marked": "^4.0.12",
+    "nodemon": "^2.0.15",
     "sass": "^1.49.9"
   }
 }

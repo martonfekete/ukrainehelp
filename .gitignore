@@ -11,3 +11,4 @@ css/*.map
 index.html
 js/ftp
 .env
+.npmrc

@@ -10,6 +10,10 @@
   const source = path.resolve(__dirname, "../index.html");
   const distPath = path.resolve(__dirname, "../dist");
 
+  if (!fs.existsSync(`${distPath}`)) {
+    fs.mkdirSync(`${distPath}`);
+  }
+
   const languages = ["en", "hu", "uk"];
   const translator = require("./build_helpers/translator");
   const translations = await translator.getTranslations();
