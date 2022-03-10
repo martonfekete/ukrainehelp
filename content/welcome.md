@@ -4,6 +4,10 @@
 
 [btn\_{{WELCOME_BUDAPEST_PONT_LINK}}]({{WELCOME_BUDAPEST_PONT_URL}})
 
+### {{HELP_MAP_NYUGATI}}
+![{{HELP_MAP_NYUGATI}}](../img/map_nyugati_{{LABEL}}.jpg "{{HELP_MAP_NYUGATI}}")
+(<small>{{HELP_MAP_NYUGATI_MADEBY}}</small>)
+
 ### {{HELP_PHONE}}
 
 {{HELP_PHONE_YETTEL}}
