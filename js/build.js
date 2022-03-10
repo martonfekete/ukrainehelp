@@ -26,9 +26,12 @@
       fs.mkdirSync(`${distPath}/${lang}`);
     }
 
-    const file = `${distPath}/${lang}/index.html`;
-    fs.copyFileSync(source, file);
-    const fileText = fs.readFileSync(file, "utf-8");
+    const target =
+      lang === process.env.DEFAULT_LANG
+        ? `${distPath}/index.html`
+        : `${distPath}/${lang}/index.html`;
+    fs.copyFileSync(source, target);
+    const fileText = fs.readFileSync(target, "utf-8");
 
     try {
       const replacements = translations[lang];
@@ -85,7 +88,14 @@
         updatedText = updatedText.replace("</head>", `${pixelCode}</head>`);
       }
 
-      fs.writeFileSync(file, updatedText);
+      fs.writeFileSync(target, updatedText);
+
+      if (lang === process.env.DEFAULT_LANG) {
+        fs.copyFileSync(
+          path.resolve(__dirname, "../partials/base.html"),
+          `${distPath}/${lang}/index.html`
+        );
+      }
       console.log(`Language version ${lang} created\n`);
     } catch (error) {
       console.log(`Error while creating version ${lang}:\n${error}`);
