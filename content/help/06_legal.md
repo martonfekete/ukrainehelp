@@ -1,3 +1,12 @@
+#### {{HELP_LEGAL_PHONE}}
+{{HELP_LEGAL_PHONEDESCPIRTON}}
+
+{{PHONE_FREE_FROMHUNGARY}}: [06 80 310 310](tel:+3680310310)<br/>
+{{PHONE_FREE_FROMUKRAINE}}: [0 800 504 546](tel:0800504546)<br/>
+{{PHONE_FREE_FROMELSE}}: [+36 1 550 1828](tel:+3615501828)<br/>
+{{EMAIL}}: [menekultinfo@me.gov.hu](mailto:menekultinfo@me.gov.hu)<br/>
+<small>({{SOURCE}}: [{{GOVERMENT}}](https://www.facebook.com/kormanyzat/posts/277021681267711), 3/11/2022)</small>
+
 #### {{HELP_LEGAL_EMBASSY}}
 
 [+36 1 42 24 124](tel:+3614224124)<br/>
