@@ -133,3 +133,27 @@ footer {
     padding: 1rem inherit;
   }
 }
+
+#cookie {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: calc(100% - 1rem);
+  display: none;
+  align-items: center;
+  background: $highlight-bg;
+  padding: 0.5rem 1rem;
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+  }
+
+  button {
+    border: thin solid beige;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+}

@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body onclick="expandLang('none', event)">
+  <body onclick="expandLang('none', event)" onload="showCookies()">
     <nav>
       <ul role="navigation">
         <li>
@@ -91,6 +91,11 @@
         {{IMPRESSUM_LABEL}}
       </button>
       <div id="impressum">[[IMPRESSUM]]</div>
+      <div id="cookie">
+        <p>{{COOKIE_NOTICE}}</p>
+        <button onclick="rejectCookies()">{{COOKIE_REJECT}}</button>
+        <button onclick="acceptCookies()">{{COOKIE_ACCEPT}}</button>
+      </div>
     </footer>
 
     <script>
@@ -114,6 +119,35 @@
         const currentStyle = impressum.style.display;
 
         impressum.style.display = currentStyle === "block" ? "none" : "block";
+      }
+
+      function showCookies() {
+        const accepted = sessionStorage.getItem("cookieAccepted");
+        if (!accepted) {
+          document.getElementById("cookie").style.display = "flex";
+          return;
+        }
+        if (!Boolean(accepted)) {
+          rejectCookies();
+        }
+      }
+
+      function rejectCookies() {
+        sessionStorage.setItem("cookieAccepted", "false");
+        document.getElementById("cookie").style.display = "none";
+
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i];
+          var eqPos = cookie.indexOf("=");
+          var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+          document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        }
+      }
+
+      function acceptCookies() {
+        sessionStorage.setItem("cookieAccepted", "true");
+        document.getElementById("cookie").style.display = "none";
       }
     </script>
   </body>
