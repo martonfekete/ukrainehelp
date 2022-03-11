@@ -1,6 +1,6 @@
 #### {{HELP_LEGAL_EMBASSY}}
 
-[+36 1 42 24 124](tel:+3614224124)<br/>
+[+36 1 422 4124](tel:+3614224124)<br/>
 1125 Budapest<br/>
 Istenhegyi út 84/b, 1125
 

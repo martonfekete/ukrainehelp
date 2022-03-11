@@ -8,3 +8,4 @@
 [btn\_{{ORGS_OCUMENIC}}](https://segelyszervezet.hu/)
 [btn\_{{ORGS_HISZ}}](http://www.hisz.hu/)
 [btn\_{{ORGS_HELSINKI}}](https://helsinki.hu)
+[btn\_{{ORGS_AUTISTIC}}](https://aosz.hu/)
