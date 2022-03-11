@@ -3,9 +3,7 @@ const ftp = require("ftp");
 const path = require("path");
 
 const distPath = path.resolve(__dirname, "../dist");
-
 const languages = ["en", "hu", "uk"];
-
 const ftpClient = new ftp();
 
 ftpClient.on("ready", function () {
@@ -26,6 +24,9 @@ ftpClient.on("ready", function () {
         uploadLangVersion(lang);
       }
     });
+
+    uploadFile("index.html");
+    uploadFile("css/style.css");
   });
 });
 
@@ -42,15 +43,19 @@ function createNewLang(lang) {
 }
 
 function uploadLangVersion(lang) {
-  console.log(`Uploading ${lang}...`);
+  uploadFile(`${lang}/index.html`);
+}
 
-  const src = `${distPath}/${lang}/index.html`;
-  ftpClient.put(src, `${lang}/index.html`, function (err, list) {
+function uploadFile(sourceFile) {
+  console.log(`Uploading ${sourceFile}...`);
+
+  const src = `${distPath}/${sourceFile}`;
+  ftpClient.put(src, `${sourceFile}`, function (err, list) {
     if (err) {
-      console.log(`Error uploading ${lang}`);
+      console.log(`Error uploading ${sourceFile}`);
       throw err;
     }
-    console.log(`Uploaded ${lang}`);
+    console.log(`Uploaded root ${sourceFile}`);
 
     ftpClient.end();
   });
