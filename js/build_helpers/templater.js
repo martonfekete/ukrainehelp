@@ -16,7 +16,8 @@ fs.readdirSync(`${markdownSource}/help`).forEach((source) => {
       `${markdownSource}/help/${source}`,
       "utf-8"
     );
-    const parsed = marked.parse(markdownContent);
+    var parsed = marked.parse(markdownContent);
+	parsed = parsed.replace(/{{_/g,  "{{HELP_" + title.toUpperCase() + "_");
     htmlString += `
     <details id="${title}">
       <summary>{{HELP_${title.toUpperCase()}}}</summary>
@@ -42,10 +43,14 @@ const createIndexHtml = () => {
   console.log("Replacing WELCOME");
   try {
     let welcome = fs.readFileSync(`${markdownSource}/welcome.md`, "utf-8");
+	
+	var parsed = marked.parse(welcome);
+	parsed = parsed.replace(/{{_/g,  "{{WELCOME_");
+	
     let welcomeHtml = `
     <details id="welcome">
       <summary>{{WELCOME}}</summary>
-      <div>${marked.parse(welcome)}</div>
+      <div>${parsed}</div>
     </details>`;
     template = template.replace(/\[\[WELCOME\]\]/g, welcomeHtml);
     console.log("WELCOME replaced");
@@ -63,7 +68,7 @@ const createIndexHtml = () => {
     let orgs = fs.readFileSync(`${markdownSource}/organizations.md`, "utf-8");
     template = template.replace(
       /\[\[ORGANIZATIONS\]\]/g,
-      marked.parse(orgs).replace("<p>", '<p class="centered">')
+      marked.parse(orgs).replace("<p>", '<p class="centered">').replace(/{{_/g,  "{{ORGANIZATIONS_")
     );
     console.log("ORGANIZATIONS replaced");
   } catch (e) {
@@ -82,7 +87,7 @@ const createIndexHtml = () => {
   console.log("Replacing IMPRESSUM...");
   try {
     let impressum = fs.readFileSync(`${markdownSource}/impressum.md`, "utf-8");
-    template = template.replace(/\[\[IMPRESSUM\]\]/g, marked.parse(impressum));
+    template = template.replace(/\[\[IMPRESSUM\]\]/g, marked.parse(impressum).replace(/{{_/g,  "{{IMPRESSUM_"));
     console.log("IMPRESSUM replaced");
   } catch (e) {
     console.log("Error replacing IMPRESSUM");
