@@ -1,7 +1,11 @@
 {{HELP_CROSSING_INFO}} <small>({{SOURCE}}: [{{POLICE}}](https://www.police.hu/hu/hirek-es-informaciok/hatarinfo), 3/12/2022)</small>
 
 {{HELP_CROSSING_PROCESS}} [{{HELP_CROSSING_PROCESSIMAGE}}]({{IMG_SRC}}/HATÁRÁTLÉPÉS_{{LABEL}}.jpg) 
-  <small>({{SOURCE}}: [{{POLICE}}](https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/hatarrendeszet/utmutato-az-ukrajnaban-zajlo-haboru-elol), 3/12/2022)</small>. {{HELP_CROSSING_NDGAPOFFICES}}: [oif.gov.hu](http://oif.gov.hu/index.php?option=com_k2&view=item&layout=item&id=175&Itemid=462&lang=hu).
+  <small>({{SOURCE}}: [{{POLICE}}](https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/hatarrendeszet/utmutato-az-ukrajnaban-zajlo-haboru-elol), 3/12/2022)</small>.
+
+{{HELP_CROSSING_NDGAPOFFICES}}: [oif.gov.hu](http://oif.gov.hu/index.php?option=com_k2&view=item&layout=item&id=175&Itemid=462&lang=hu).
+ 
+{{HELP_CROSSING_NDGABUDAPEST}} <small>({{SOURCE}}: [oif.gov.hu](http://oif.gov.hu/index.php?option=com_k2&view=item&id=1757:information), 3/10/2022)</small>.
 
 {{HELP_CROSSING_FACT}}: [{{MORE}}](https://bnt.eu/bnt-news/help-guide-for-ukrainians/) <small>({{SOURCE}}: [bnt attorneys in CEE}](https://bnt.eu/), 3/11/2022).</small>
 
