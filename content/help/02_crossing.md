@@ -1,7 +1,7 @@
 {{HELP_CROSSING_INFO}} <small>({{SOURCE}}: [{{POLICE}}](https://www.police.hu/hu/hirek-es-informaciok/hatarinfo), 3/12/2022)</small>
 
-{{HELP_CROSSING_PROCESS}} [{{HELP_CROSSING_PROCESSIMAGE}}]({{IMG_SRC}}/HATÁRÁTLÉPÉS_{{LABEL}}.jpg).
- <small>({{SOURCE}}: [{{POLICE}}](https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/hatarrendeszet/utmutato-az-ukrajnaban-zajlo-haboru-elol), 3/12/2022)</small>
+{{HELP_CROSSING_PROCESS}} [{{HELP_CROSSING_PROCESSIMAGE}}]({{IMG_SRC}}/HATÁRÁTLÉPÉS_{{LABEL}}.jpg) 
+  <small>({{SOURCE}}: [{{POLICE}}](https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/hatarrendeszet/utmutato-az-ukrajnaban-zajlo-haboru-elol), 3/12/2022)</small>. {{HELP_CROSSING_NDGAPOFFICES}}: [oif.gov.hu](http://oif.gov.hu/index.php?option=com_k2&view=item&layout=item&id=175&Itemid=462&lang=hu).
 
 [{{HELP_CROSSING_INFO_MORE}}](https://tcn.hu/wp-content/uploads/2022/03/TCN_ukrajnai_menekult_tajekoztato_V3_text_A4.pdf)
 
