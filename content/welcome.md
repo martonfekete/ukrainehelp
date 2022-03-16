@@ -2,11 +2,9 @@
 
 {{WELCOME_GOVT_HOTLINE}}
 
-[{{WELCOME_GOVT_INFO_HU}}: 06 80 310 310](tel:+3680310310)
-
-[{{WELCOME_GOVT_INFO_UKRAINE}}: 0 800 504 546](tel:0800504546)
-
-[menekultinfo@me.gov.hu](mailto:menekultinfo@me.gov.hu)
+- [{{WELCOME_GOVT_INFO_HU}}: 06 80 310 310](tel:+3680310310)
+- [{{WELCOME_GOVT_INFO_UKRAINE}}: 0 800 504 546](tel:0800504546)
+- [menekultinfo@me.gov.hu](mailto:menekultinfo@me.gov.hu)
 
 ### {{WELCOME_BUDAPEST_PONT}}
 
