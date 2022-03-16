@@ -33,7 +33,7 @@ async function getTranslations() {
 
     for (let i = 0; i < doc.sheetCount; i++) {
       const sheet = doc.sheetsByIndex[i];
-      process.stdout.write(`\nReading sheet: ${sheet.title}`);
+      process.stdout.write(`Reading sheet: ${sheet.title}`);
       if (i == 0) process.stdout.write("(default) ");
 
       const rows = await sheet.getRows();
@@ -47,7 +47,7 @@ async function getTranslations() {
         uk.set(`{{${row.LABEL}}}`, row.UK);
         hu.set(`{{${row.LABEL}}}`, row.HU);
       });
-      process.stdout.write(" [done]\n");
+      process.stdout.write("\n");
     }
     return { en, uk, hu };
   } catch (e) {

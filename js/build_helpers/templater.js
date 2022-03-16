@@ -16,13 +16,13 @@ fs.readdirSync(`${markdownSource}/help`).forEach((source) => {
       `${markdownSource}/help/${source}`,
       "utf-8"
     );
-    var parsed = marked.parse(markdownContent);
-	parsed = parsed.replace(/{{_/g,  "{{HELP_" + title.toUpperCase() + "_");
+    let parsed = marked.parse(markdownContent);
+    parsed = parsed.replace(/{{_/g, "{{HELP_" + title.toUpperCase() + "_");
     htmlString += `
-    <details id="${title}">
-      <summary>{{HELP_${title.toUpperCase()}}}</summary>
-      <div>${parsed}</div>
-    </details>`;
+      <details id="${title}">
+        <summary>{{HELP_${title.toUpperCase()}}}</summary>
+        <div>${parsed}</div>
+      </details>`;
   } catch (e) {
     console.log(`Error building HTML from ${markdownSource}/${source}`);
     console.log(e);
@@ -43,10 +43,10 @@ const createIndexHtml = () => {
   console.log("Replacing WELCOME");
   try {
     let welcome = fs.readFileSync(`${markdownSource}/welcome.md`, "utf-8");
-	
-	var parsed = marked.parse(welcome);
-	parsed = parsed.replace(/{{_/g,  "{{WELCOME_");
-	
+
+    var parsed = marked.parse(welcome);
+    parsed = parsed.replace(/{{_/g, "{{WELCOME_");
+
     let welcomeHtml = `
     <details id="welcome">
       <summary>{{WELCOME}}</summary>
@@ -68,7 +68,10 @@ const createIndexHtml = () => {
     let orgs = fs.readFileSync(`${markdownSource}/organizations.md`, "utf-8");
     template = template.replace(
       /\[\[ORGANIZATIONS\]\]/g,
-      marked.parse(orgs).replace("<p>", '<p class="centered">').replace(/{{_/g,  "{{ORGANIZATIONS_")
+      marked
+        .parse(orgs)
+        .replace("<p>", '<p class="centered">')
+        .replace(/{{_/g, "{{ORGANIZATIONS_")
     );
     console.log("ORGANIZATIONS replaced");
   } catch (e) {
@@ -87,7 +90,10 @@ const createIndexHtml = () => {
   console.log("Replacing IMPRESSUM...");
   try {
     let impressum = fs.readFileSync(`${markdownSource}/impressum.md`, "utf-8");
-    template = template.replace(/\[\[IMPRESSUM\]\]/g, marked.parse(impressum).replace(/{{_/g,  "{{IMPRESSUM_"));
+    template = template.replace(
+      /\[\[IMPRESSUM\]\]/g,
+      marked.parse(impressum).replace(/{{_/g, "{{IMPRESSUM_")
+    );
     console.log("IMPRESSUM replaced");
   } catch (e) {
     console.log("Error replacing IMPRESSUM");
