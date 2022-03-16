@@ -1,5 +1,5 @@
 {{CHILDREN-EDUCATION_LEGAL}} [{{MORE_INFO}}]({{CHILDREN-EDUCATION_LEGAL_URL}})
-[src\_{{CHILDREN-EDUCATION_GYJOG}}](https://gyermekjogicivilkoalicio.hu/aktualis/tajekoztato-ukrajnabol-menekulo-gyerekeknek/###3/16/2022)
+[ref\_{{CHILDREN-EDUCATION_GYJOG}}](https://gyermekjogicivilkoalicio.hu/aktualis/tajekoztato-ukrajnabol-menekulo-gyerekeknek/###3/16/2022)
 
 ### {{CHILDREN-EDUCATION_KINDERGARDEN}}
 
@@ -14,10 +14,10 @@
 ### {{CHILDREN-EDUCATION_DAYCARE}}
 
 {{CHILDREN-EDUCATION_SUHANJ_DAYCARE}} [{{MORE_INFO}}](https://www.facebook.com/suhanjalapitvany/photos/a.589132167795288/7227670407274731/)
-[src\_{{CHILDREN-EDUCATION_SUHANJ}}](https://www.facebook.com/suhanjalapitvany/photos/a.589132167795288/7227670407274731/###3/16/2022)
+[ref\_{{CHILDREN-EDUCATION_SUHANJ}}](https://www.facebook.com/suhanjalapitvany/photos/a.589132167795288/7227670407274731/###3/16/2022)
 
 {{CHILDREN-EDUCATION_PLAY}} [{{MORE_INFO}}](https://www.facebook.com/SugarJatszohaz/photos/a.2675275289193603/4848096748578102/)
-[src\_{{CHILDREN-EDUCATION_SUGAR}}](https://www.facebook.com/SugarJatszohaz/photos/a.2675275289193603/4848096748578102/###3/16/2022)
+[ref\_{{CHILDREN-EDUCATION_SUGAR}}](https://www.facebook.com/SugarJatszohaz/photos/a.2675275289193603/4848096748578102/###3/16/2022)
 
 ### {{CHILDREN-EDUCATION_UNIVERSITIES}}
 
@@ -25,4 +25,4 @@
 [ref_Semmelweis](https://semmelweis.hu/hirek/2022/02/28/tobb-teruleten-is-segiti-a-semmelweis-egyetem-az-ukrajnabol-menekuloket/###3/16/2022)
 
 {{CHILDREN-EDUCATION_MOME_GRANT}} [{{MORE_INFO}}](https://www.facebook.com/momebudapest/photos/a.166689020046984/4874153675967138/)
-[src\_{{CHILDREN-EDUCATION_MOME}}](https://www.facebook.com/momebudapest/photos/a.166689020046984/4874153675967138/###3/16/2022)
+[ref\_{{CHILDREN-EDUCATION_MOME}}](https://www.facebook.com/momebudapest/photos/a.166689020046984/4874153675967138/###3/16/2022)

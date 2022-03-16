@@ -134,6 +134,12 @@
           const anchor = url.slice(url.indexOf("#") + 1);
           const details = document.querySelector(`#${anchor}`);
           details.setAttribute("open", true);
+          try {
+            window.scrollTo(
+              0,
+              details.getBoundingClientRect().top + window.scrollY - 50
+            );
+          } catch {}
         }
       }
 
