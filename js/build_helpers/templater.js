@@ -19,7 +19,8 @@ fs.readdirSync(`${markdownSource}/help`).forEach((source) => {
     let parsed = marked.parse(markdownContent);
     parsed = parsed.replace(/{{_/g, "{{HELP_" + title.toUpperCase() + "_");
     htmlString += `
-      <details id="${title}">
+      <a class="anchor" name="${title}"></a>
+      <details id="${title}" onclick="setAnchorTag('${title}')">
         <summary>{{HELP_${title.toUpperCase()}}}</summary>
         <div>${parsed}</div>
       </details>`;

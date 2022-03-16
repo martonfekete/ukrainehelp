@@ -77,6 +77,12 @@ a:link, a:hover, a:visited, a:active {
   color: #0057b7;
   text-decoration: none;
 }
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
 
 main {
   max-width: 768px;
