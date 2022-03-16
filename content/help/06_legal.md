@@ -6,7 +6,7 @@
 - {{WELCOME_GOVT_INFO_UKRAINE}}: [0 800 504 546](tel:0800504546)<br/>
 - {{PHONE_FREE_FROMELSE}}: [+36 1 550 1828](tel:+3615501828)<br/>
 - {{EMAIL}}: [menekultinfo@me.gov.hu](mailto:menekultinfo@me.gov.hu)<br/>
-  <small>({{SOURCE}}: [{{GOVERMENT}}](https://www.facebook.com/kormanyzat/posts/277021681267711), 3/11/2022)</small>
+  [src\_{{GOVERMENT}}](https://www.facebook.com/kormanyzat/posts/277021681267711###3/11/2022)
 
 #### {{HELP_LEGAL_EMBASSY}}
 

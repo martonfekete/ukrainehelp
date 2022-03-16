@@ -8,8 +8,8 @@
 [btn\_{{WELCOME_TRAVEL_NYUGATI}}]({{WELCOME_TRAVEL_NYUGATI_LINK}})
 [btn\_{{WELCOME_TRAVEL_KELETI}}]({{WELCOME_TRAVEL_KELETI_LINK}})
 
-{{TRANSPORT_RAIL_ONLINE}} [{{TRANSPORT_RAIL_ONLINE_GUIDE}}](https://www.mavcsoport.hu/sites/default/files/upload/travel-offer/document/public/ukran_ajanlat_reszletes_22.03_web.pdf)<br/>
-<small>({{SOURCE}}: [MÁV](https://www.mavcsoport.hu/mav-start/belfoldi-utazas/ukrajna-vasuti-utazasi-informaciok), 3/16/2022)</small>
+{{TRANSPORT_RAIL_ONLINE}} [{{TRANSPORT_RAIL_ONLINE_GUIDE}}](https://www.mavcsoport.hu/sites/default/files/upload/travel-offer/document/public/ukran_ajanlat_reszletes_22.03_web.pdf)
+[ref_MÁV](https://www.mavcsoport.hu/mav-start/belfoldi-utazas/ukrajna-vasuti-utazasi-informaciok###3/16/2022)
 
 ### {{TRANSPORT_BKK}}
 
@@ -39,4 +39,4 @@
 - {{TRANSPORT_AIR_WIZZ}} [{{MORE_INFO}}]({{TRANSPORT_AIR_WIZZ_URL}})
 
 [btn\_{{TRANSPORT_AIR_BUD}}]({{TRANSPORT_AIR_BUD_URL}})
-[btn\_{{TRANSPORT_AIR_DEB}}]({{TRANSPORT_AIR_DEB}})
+[btn\_{{TRANSPORT_AIR_DEB}}]({{TRANSPORT_AIR_DEB_URL}})

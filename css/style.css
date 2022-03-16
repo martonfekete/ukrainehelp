@@ -236,4 +236,44 @@ details[open] > *:not(summary) {
   padding: 0.5rem;
 }
 
+.reference {
+  position: relative;
+  bottom: 0.1rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: #444 !important;
+}
+.reference::before {
+  content: "🙾";
+  color: inherit;
+}
+.reference__tooltip {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 150px;
+  bottom: 150%;
+  left: 50%;
+  margin-left: calc(-75px - 0.5rem);
+  padding: 0.5rem;
+  background-color: #444;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: beige;
+  font-size: smaller;
+}
+.reference__tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #444 transparent transparent transparent;
+}
+.reference:hover .reference__tooltip {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
