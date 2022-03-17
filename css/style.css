@@ -244,13 +244,18 @@ details[open] > *:not(summary) {
 
 .reference {
   position: relative;
-  bottom: 0.1rem;
+  top: 0.1rem;
   display: inline-block;
-  margin-left: 0.5rem;
+  margin-left: 0.25rem;
   color: #444 !important;
 }
 .reference::before {
-  content: "🙾";
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/source.png) no-repeat 0 0;
+  background-size: contain;
   color: inherit;
 }
 .reference__tooltip {
