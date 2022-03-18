@@ -1,11 +1,11 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Node.js CI
+name: FTP publish
 
 on:
   push:
-    branches: [example]
+    branches: [example, master]
 
 env:
   GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
@@ -16,7 +16,7 @@ env:
   DEFAULT_LANG: "uk"
 
 jobs:
-  build:
+  build and release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

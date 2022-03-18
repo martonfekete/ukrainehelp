@@ -32,7 +32,7 @@ ftpClient.on("ready", function () {
 
 function createNewLang(lang) {
   console.log(`\nCreating folder for ${lang}`);
-  ftpClient.mkdir(`auto/${lang}`, (err) => {
+  ftpClient.mkdir(`${lang}`, (err) => {
     if (err) {
       console.log(`Failed to create dir ${lang}`);
       throw err;
@@ -50,7 +50,7 @@ function uploadFile(sourceFile) {
   console.log(`Uploading ${sourceFile}...`);
 
   const src = `${distPath}/${sourceFile}`;
-  ftpClient.put(src, `auto/${sourceFile}`, function (err, list) {
+  ftpClient.put(src, `${sourceFile}`, function (err, list) {
     if (err) {
       console.log(`Error uploading ${sourceFile}`);
       throw err;
