@@ -1,4 +1,6 @@
 const ftp = require("ftp");
+console.log(process.env);
+console.log(process.argv);
 
 const ftpClient = new ftp();
 
