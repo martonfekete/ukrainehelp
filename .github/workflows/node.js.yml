@@ -27,5 +27,5 @@ jobs:
           node-version: "16.x"
           cache: "npm"
       - run: npm ci
-      - run: npm build:prod
+      - run: npm run build:prod
       - run: node ./js/ftp.js "$host" "$user" "$pass"
