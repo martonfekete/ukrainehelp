@@ -1,19 +1,29 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Node.js CI
-
-env:
-  ftp_host: ${{ secrets.FTP_HOST }}
+name: FTP publish
 
 on:
   push:
-    branches: [ example ]
+    branches: [master]
+
+env:
+  GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+  GOOGLE_TRANSLATIONS_KEY: ${{ secrets.GOOGLE_TRANSLATIONS_KEY }}
+  FTP_HOST: ${{ secrets.FTP_HOST }}
+  FTP_USER: ${{ secrets.FTP_USER }}
+  FTP_PASS: ${{ secrets.FTP_PASS }}
+  DEFAULT_LANG: "uk"
 
 jobs:
-  build:
-
+  build-and-release:
     runs-on: ubuntu-latest
     steps:
-      - name: "Test echo"
-        run: echo "ftp host is $env.ftp_host"
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+          cache: "npm"
+      - run: npm ci
+      - run: npm run build:prod
+      - run: node ./js/upload.js "$FTP_HOST" "$FTP_USER" "$FTP_PASS"
