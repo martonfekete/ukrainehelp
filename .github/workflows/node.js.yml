@@ -12,9 +12,9 @@ on:
 env:
   GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
   GOOGLE_TRANSLATIONS_KEY: ${{ secrets.GOOGLE_TRANSLATIONS_KEY }}
-  HOST: ${{ secrets.FTP_HOST }}
-  USER: ${{ secrets.FTP_USER }}
-  PASS: ${{ secrets.FTP_PASS }}
+  FTP_HOST: ${{ secrets.FTP_HOST }}
+  FTP_USER: ${{ secrets.FTP_USER }}
+  FTP_PASS: ${{ secrets.FTP_PASS }}
   DEFAULT_LANG: "uk"
 
 jobs:
@@ -28,4 +28,4 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run build:prod
-      - run: node ./js/ftp.js "$HOST" "$USER" "$PASS"
+      - run: node ./js/upload.js "$FTP_HOST" "$FTP_USER" "$FTP_PASS"
