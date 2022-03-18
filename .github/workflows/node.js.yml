@@ -10,8 +10,23 @@ on:
 jobs:
   example:
     env:
-      ftp_host: ${{ secrets.FTP_HOST }}
+      host: ${{ secrets.FTP_HOST }}
+      user: ${{ secrets.FTP_USER }}
+      pass: ${{ secrets.FTP_PASS }}
+
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-      - name: "Test echo"
-        run: echo "ftp host is ${{env.ftp_host}}"
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm ci
+      - run: node ./js/read.js ${{env.host}} ${{env.user}} ${{env.pass}}

@@ -1,1 +1,26 @@
-console.log(process.argv[2], process.argv[3], process.argv[4]);
+const ftp = require("ftp");
+
+const ftpClient = new ftp();
+
+ftpClient.on("ready", function () {
+  ftpClient.list((err, list) => {
+    if (err) {
+      console.log("Error retrieving directory");
+      throw err;
+    }
+
+    const dirs = list
+      .filter((item) => item.type === "d")
+      .map((item) => item.name);
+
+    console.log(dirs);
+
+    ftpClient.end();
+  });
+});
+
+ftpClient.connect({
+  host: process.argv[2],
+  user: process.argv[3],
+  password: process.argv[4],
+});
