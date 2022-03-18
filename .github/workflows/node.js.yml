@@ -6,8 +6,6 @@ name: FTP publish
 on:
   push:
     branches: [example, master]
-  pull_request:
-    branches: [master]
 
 env:
   GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
