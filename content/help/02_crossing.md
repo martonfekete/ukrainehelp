@@ -1,4 +1,4 @@
-{{HELP_CROSSING_INFO}} [{{HELP_CROSSING_INFO_MORE}}](https://tcn.hu/wp-content/uploads/2022/03/TCN_ukrajnai_menekult_tajekoztato_V3_text_A4.pdf)
+{{HELP_CROSSING_INFO}}[ref\_{{POLICE}}](https://www.police.hu/index.php/hu/hirek-es-informaciok/hatarinfo###3/18/2022) [{{DOWNLOAD_INFO}}](https://tcn.hu/wp-content/uploads/2022/03/TCN_ukrajnai_menekult_tajekoztato_V3_text_A4.pdf)
 
 {{HELP_CROSSING_FACT}}: [{{HELP_CROSSING_FACT_MORE}}](https://bnt.eu/bnt-news/help-guide-for-ukrainians/)
 

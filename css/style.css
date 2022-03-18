@@ -166,6 +166,13 @@ footer #impressum {
   color: beige;
   font-style: normal;
 }
+footer #impressum a {
+  color: beige;
+}
+footer #impressum a::after {
+  content: "»";
+  padding-left: 0.25rem;
+}
 
 @media screen and (min-width: 769px) {
   footer {
@@ -213,6 +220,12 @@ a.btn.highlight {
   background: #0057b7;
   color: beige;
   font-size: large;
+}
+a.btn.highlight-small {
+  padding: 0.25rem 0.5rem;
+  background: #0057b7;
+  color: beige;
+  border-radius: 0.5rem;
 }
 a.btn.inverted {
   border: thin solid #ffd700;

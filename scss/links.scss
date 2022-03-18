@@ -13,6 +13,12 @@ a {
       color: $highlight;
       font-size: large;
     }
+    &.highlight-small {
+      padding: 0.25rem 0.5rem;
+      background: $highlight-bg;
+      color: $highlight;
+      border-radius: 0.5rem;
+    }
     &.inverted {
       border: thin solid $yellow;
       text-transform: none;

@@ -14,6 +14,10 @@ try {
         start = 'a class="btn highlight"';
         text = text.slice(4);
       }
+      if (text.startsWith("btn-small_")) {
+        start = 'a class="btn highlight-small"';
+        text = text.slice(10);
+      }
       if (text.startsWith("invert-btn_")) {
         start = 'a class="btn highlight inverted"';
         text = text.slice(11);

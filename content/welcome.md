@@ -6,6 +6,13 @@
 - [{{WELCOME_GOVT_INFO_UKRAINE}}: 0 800 504 546](tel:0800504546)
 - [menekultinfo@me.gov.hu](mailto:menekultinfo@me.gov.hu)
 
+### {{LEGAL_INTERIOR}}
+
+{{LEGAL_REFUGEE_DANGER}} [ref\_{{MIN_INTERIOR}}](https://emberkereskedelem.kormany.hu/###3/18/2022)
+
+[btn-small\_{{DOWNLOAD_INFO}} ({{LANG_HU}})]({{FILE_SRC}}/refugee_victim_info_HU.pdf)
+[btn-small\_{{DOWNLOAD_INFO}} ({{LANG_UK}})]({{FILE_SRC}}/refugee_victim_info_UK.pdf)
+
 ### {{WELCOME_BUDAPEST_PONT}}
 
 {{WELCOME_BUDAPEST_PONT_INFO}}
