@@ -4,15 +4,16 @@ async function getTranslations() {
   const defaultMap = new Map([
     ["{{CSS_SRC}}", "../css"],
     ["{{IMG_SRC}}", "../img"],
+    ["{{FILE_SRC}}", "../img"],
   ]);
 
-  var defaultReturn = {
+  const defaultReturn = {
     en: defaultMap,
     hu: defaultMap,
     uk: defaultMap,
   };
 
-  var doc = new Object();
+  let doc = new Object();
   try {
     console.log("\nConnecting to Google Docs");
     doc = new GoogleSpreadsheet(process.env.GOOGLE_TRANSLATIONS_KEY);
