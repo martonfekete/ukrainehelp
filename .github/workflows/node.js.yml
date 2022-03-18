@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Test echo"
-        run: echo "ftp host is $env.ftp_host"
+        run: echo "ftp host is ${{env.ftp_host}}"
