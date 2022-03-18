@@ -16,5 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Test echo"
-        if: ${{ env.DAY_OF_WEEK == 'Monday' }}
         run: echo "ftp host is $env.ftp_host"
