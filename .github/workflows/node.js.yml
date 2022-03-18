@@ -8,18 +8,16 @@ on:
     branches: [example]
 
 env:
-  GOOGLE_API_KEY: "AIzaSyDLVmqNDJXZ0JyhHR7sCmqY2BHYyPr1p6M"
-  GOOGLE_TRANSLATIONS_KEY: "1BJNV4zqOzGnDbHVzfwdFQ6Eo2PW2GWTwMUiuZKzk8C0"
+  GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+  GOOGLE_TRANSLATIONS_KEY: ${{ secrets.GOOGLE_TRANSLATIONS_KEY }}
+  HOST: ${{ secrets.FTP_HOST }}
+  USER: ${{ secrets.FTP_USER }}
+  PASS: ${{ secrets.FTP_PASS }}
+  DEFAULT_LANG: "uk"
 
 jobs:
-  example:
-    env:
-      host: ${{ secrets.FTP_HOST }}
-      user: ${{ secrets.FTP_USER }}
-      pass: ${{ secrets.FTP_PASS }}
-
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -28,4 +26,4 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run build:prod
-      - run: node ./js/ftp.js "$host" "$user" "$pass"
+      - run: node ./js/ftp.js "$HOST" "$USER" "$PASS"
