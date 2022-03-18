@@ -3,16 +3,14 @@
 
 name: Node.js CI
 
-env:
-  ftp_host: ${{ secrets.FTP_HOST }}
-
 on:
   push:
-    branches: [ example ]
+    branches: [example]
 
 jobs:
-  build:
-
+  example:
+    env:
+      ftp_host: ${{ secrets.FTP_HOST }}
     runs-on: ubuntu-latest
     steps:
       - name: "Test echo"
