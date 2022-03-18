@@ -122,6 +122,13 @@ footer {
     border-top: thin solid $yellow;
     color: $highlight;
     font-style: normal;
+    a {
+      color: $highlight;
+      &::after {
+        content: "\00bb";
+        padding-left: 0.25rem;
+      }
+    }
   }
 }
 
