@@ -6,6 +6,8 @@ name: FTP publish
 on:
   push:
     branches: [example, master]
+  pull_request:
+    branches: [master]
 
 env:
   GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
@@ -16,7 +18,7 @@ env:
   DEFAULT_LANG: "uk"
 
 jobs:
-  build and release:
+  build-and-release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
