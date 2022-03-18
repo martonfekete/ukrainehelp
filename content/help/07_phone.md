@@ -1,0 +1,10 @@
+# 07\_phone
+
+\{{HELP\_PHONE\_WIFI\}}
+
+\{{HELP\_PHONE\_INFO\}}
+
+* \{{HELP\_PHONE\_INFO\_KELETI\}}
+* \{{HELP\_PHONE\_INFO\_NYUGATI\}}
+
+\{{HELP\_PHONE\_YETTEL\}}

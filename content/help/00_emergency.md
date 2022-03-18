@@ -1,0 +1,6 @@
+# 00\_emergency
+
+* \{{HELP\_EMERGENCY\_GENERAL\}} (\{{HELP\_EMERGENCY\_AMBULANCE\}}, \{{HELP\_EMERGENCY\_POLICE\}}, \{{HELP\_EMERGENCY\_FIRE\}}): [112](https://tel:112)
+* \{{HELP\_EMERGENCY\_HOTLINE\}}: [+36 1 438 8080](tel:+3614388080)
+* \{{HELP\_EMERGENCY\_DIRECTORY\}}: [191](https://tel:191)
+* \{{HELP\_EMERGENCY\_OPERATOR\}}: [199](https://tel:199)
