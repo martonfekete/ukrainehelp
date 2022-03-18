@@ -43,7 +43,7 @@ function createNewLang(lang) {
 }
 
 function uploadLangVersion(lang) {
-  uploadFile(`auto/${lang}/index.html`);
+  uploadFile(`${lang}/index.html`);
 }
 
 function uploadFile(sourceFile) {
