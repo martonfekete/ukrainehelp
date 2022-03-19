@@ -77,6 +77,12 @@ a:link, a:hover, a:visited, a:active {
   color: #0057b7;
   text-decoration: none;
 }
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
 
 main {
   max-width: 768px;
@@ -160,6 +166,13 @@ footer #impressum {
   color: beige;
   font-style: normal;
 }
+footer #impressum a {
+  color: beige;
+}
+footer #impressum a::after {
+  content: "»";
+  padding-left: 0.25rem;
+}
 
 @media screen and (min-width: 769px) {
   footer {
@@ -208,6 +221,12 @@ a.btn.highlight {
   color: beige;
   font-size: large;
 }
+a.btn.highlight-small {
+  padding: 0.25rem 0.5rem;
+  background: #0057b7;
+  color: beige;
+  border-radius: 0.5rem;
+}
 a.btn.inverted {
   border: thin solid #ffd700;
   text-transform: none;
@@ -234,6 +253,51 @@ details[open] {
 }
 details[open] > *:not(summary) {
   padding: 0.5rem;
+}
+
+.reference {
+  position: relative;
+  top: 0.1rem;
+  display: inline-block;
+  margin-left: 0.25rem;
+  color: #444 !important;
+}
+.reference::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url(../img/source.png) no-repeat 0 0;
+  background-size: contain;
+  color: inherit;
+}
+.reference__tooltip {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  width: 150px;
+  bottom: 150%;
+  left: 50%;
+  margin-left: calc(-75px - 0.5rem);
+  padding: 0.5rem;
+  background-color: #444;
+  text-align: center;
+  border-radius: 0.5rem;
+  color: beige;
+  font-size: smaller;
+}
+.reference__tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #444 transparent transparent transparent;
+}
+.reference:hover .reference__tooltip {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

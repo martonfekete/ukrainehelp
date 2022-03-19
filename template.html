@@ -21,7 +21,7 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body onclick="expandLang('none', event)" onload="showCookies()">
+  <body onclick="expandLang('none', event)" onload="bodyLoaded()">
     <nav>
       <ul role="navigation">
         <li>
@@ -73,11 +73,11 @@
       <section id="links" class="centered vertical">
         <h2>{{USEFUL_LINKS}}</h2>
         <div class="centered">
-          <a class="btn highlight" href="{{HELP_TRANSPORT_BKK_TIMETABLE_URL}}"
-            >{{HELP_TRANSPORT_BKK}}</a
+          <a class="btn highlight" href="{{TRANSPORT_BKK_TIMETABLE_URL}}"
+            >{{TRANSPORT_BKK}}</a
           >
-          <a class="btn highlight" href="{{HELP_TRANSPORT_AIR_BUD_URL}}"
-            >{{HELP_TRANSPORT_AIR_BUD}}</a
+          <a class="btn highlight" href="{{TRANSPORT_AIR_BUD_URL}}"
+            >{{TRANSPORT_AIR_BUD}}</a
           >
         </div>
       </section>
@@ -121,6 +121,36 @@
         const currentStyle = impressum.style.display;
 
         impressum.style.display = currentStyle === "block" ? "none" : "block";
+      }
+
+      function bodyLoaded() {
+        showCookies();
+        scrollToAnchor();
+      }
+
+      function scrollToAnchor() {
+        const url = window.location.href;
+        if (url.includes("#")) {
+          const anchor = url.slice(url.indexOf("#") + 1);
+          const details = document.querySelector(`#${anchor}`);
+          details.setAttribute("open", true);
+          try {
+            window.scrollTo(
+              0,
+              details.getBoundingClientRect().top + window.scrollY - 50
+            );
+          } catch {}
+        }
+      }
+
+      function setAnchorTag(id) {
+        let url = window.location.href;
+        if (url.includes("#")) {
+          url = url.replace(/#.*/i, `#${id}`);
+        } else {
+          url = `${url}#${id}`;
+        }
+        window.history.pushState({}, "", url);
       }
 
       function showCookies() {
