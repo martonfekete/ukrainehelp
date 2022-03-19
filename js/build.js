@@ -38,6 +38,9 @@
       let updatedText = fileText.replace(/{{[^}]+}}/g, function (m) {
         return replacements.get(m) || m;
       });
+      updatedText = updatedText.replace(/%7B%7B(.+?)%7D%7D/g, function (m, p1) {
+        return replacements.get("{{" + p1 + "}}") || m;
+      });
 
       console.log("Adding meta");
       const commitHash = require("./build_helpers/version").revision;

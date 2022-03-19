@@ -27,6 +27,10 @@ nav li a:link, nav li a:hover, nav li a:visited, nav li a:active {
   color: beige;
 }
 
+#welcome img {
+  width: 100%
+}
+
 #lang button {
   padding: 1rem;
   border: none;
