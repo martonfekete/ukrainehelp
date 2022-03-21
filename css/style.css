@@ -300,4 +300,29 @@ details[open] > *:not(summary) {
   display: block;
 }
 
+.org {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 1rem;
+}
+.org__link {
+  display: flex;
+}
+.org__logo {
+  height: 40px;
+  background-size: cover;
+  width: 40px;
+}
+.org__text {
+  color: beige;
+  padding: 0.5rem 2rem;
+}
+.org__fb {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 0.75rem;
+}
+
 /*# sourceMappingURL=style.css.map */

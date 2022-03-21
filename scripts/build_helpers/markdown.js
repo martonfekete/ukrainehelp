@@ -5,6 +5,9 @@ console.log("Setting markdown parser options...");
 try {
   const renderer = {
     link(href, title, text) {
+      if (text.startsWith("org_")) {
+        return renderOrganizationLink(text, href);
+      }
       if (text.startsWith("ref_")) {
         return renderSourceReference(text, href);
       }
@@ -55,4 +58,27 @@ function renderSourceReference(text, href) {
     0,
     dateIndex
   )}" class="reference" rel="noreferrer noopener" target="_blank"><span class="reference__tooltip">{{SOURCE}}: ${text} ${dateText}</span></a>`;
+}
+
+function renderOrganizationLink(text, href) {
+  let end = text.length;
+  let logo = "";
+  if (text.includes("_img")) {
+    end = text.indexOf("_img:");
+    logo = `<span style="background-image: url({{IMG_SRC}}/${text
+      .match(/\_img:.*$/gi)[0]
+      .slice(5)})" class="org__logo" /></span>`;
+  }
+  let fb = "";
+  let link = href;
+  if (href.includes("_fb:")) {
+    fb = `<a href="https://facebook.com/${href
+      .match(/_fb:.*$/gi)[0]
+      .slice(
+        4
+      )}" class="org__fb" rel="noreferrer noopener" target="_blank"><img src="{{IMG_SRC}}/fb.svg"></a>`;
+    link = href.slice(0, href.indexOf("_fb:"));
+  }
+  text = text.slice(4, end);
+  return `<span class="highlight org"><a href="${link}" class="org__link" rel="noreferrer noopener" target="_blank">${logo}<span class="org__text">${text}</span></a>${fb}</span>`;
 }

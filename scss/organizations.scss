@@ -1,0 +1,27 @@
+@import "_colors";
+
+.org {
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 1rem;
+
+  &__link {
+    display: flex;
+  }
+  &__logo {
+    height: 40px;
+    background-size: cover;
+    width: 40px;
+  }
+  &__text {
+    color: $highlight;
+    padding: 0.5rem 2rem;
+  }
+  &__fb {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 0.75rem;
+  }
+}
