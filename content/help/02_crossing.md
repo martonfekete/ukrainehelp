@@ -7,7 +7,7 @@
  
 {{_NDGABUDAPEST}} [ref\_oif.gov.hu](http://oif.gov.hu/index.php?option=com_k2&view=item&id=1757:information###3/10/2022)
 
-{{_FACT}}: [{{MORE}}](https://bnt.eu/bnt-news/help-guide-for-ukrainians/) [ref\_bnt attorneys in CEE](https://bnt.eu/###3/11/2022)
+{{_FACT}}: [{{MORE_INFO}}](https://bnt.eu/bnt-news/help-guide-for-ukrainians/) [ref\_bnt attorneys in CEE](https://bnt.eu/###3/11/2022)
 
 {{_CENTRAL}}: {{_HOTLINE}}.
 
@@ -15,4 +15,4 @@
 - [+38 067 233 0319](tel:+380672330319)
 - [+38 067 312 2247](tel:+380673122247)
 
-[{{_INFO_MORE}}](https://tcn.hu/wp-content/uploads/2022/03/TCN_ukrajnai_menekult_tajekoztato_V3_text_A4.pdf)
+[{{MORE_INFO}}](https://tcn.hu/wp-content/uploads/2022/03/TCN_ukrajnai_menekult_tajekoztato_V3_text_A4.pdf)
