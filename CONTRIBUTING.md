@@ -10,6 +10,10 @@
   - downloadable files are in `/files`
 - when you run one of the build scripts, you'll see a `dist` folder appear in your local repo that has the final compiled project
 
+## Commits
+
+The project uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#summary). Please follow the syntax when contributing.
+
 ## Stylesheets
 
 The project uses SCSS to declare style. Since the page is pretty simple, no pattern is implemented in the files structure. Just keep connected classes in one file, separating specific areas from the rest.
