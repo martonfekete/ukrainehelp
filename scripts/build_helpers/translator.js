@@ -1,10 +1,11 @@
-async function getTranslations() {
+async function getTranslations(key, apiKey) {
   const { GoogleSpreadsheet } = require("google-spreadsheet");
 
   const defaultMap = new Map([
     ["{{CSS_SRC}}", "../css"],
     ["{{IMG_SRC}}", "../img"],
-    ["{{FILE_SRC}}", "../img"],
+    ["{{FILE_SRC}}", "../files"],
+    ["{{JS_SRC}}", "../js"],
   ]);
 
   const defaultReturn = {

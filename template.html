@@ -98,8 +98,11 @@
         <button onclick="rejectCookies()">{{COOKIE_REJECT}}</button>
         <button onclick="acceptCookies()">{{COOKIE_ACCEPT}}</button>
       </div>
+      {{EXAMPLE}} [[OTHEREX]]
     </footer>
 
+    <script src="{{JS_SRC}}/anchors.js"></script>
+    <script src="{{JS_SRC}}/cookies.js"></script>
     <script>
       function expandLang(forceVal, e) {
         const langSelector = document.querySelector("#lang ul");
@@ -126,60 +129,6 @@
       function bodyLoaded() {
         showCookies();
         scrollToAnchor();
-      }
-
-      function scrollToAnchor() {
-        const url = window.location.href;
-        if (url.includes("#")) {
-          const anchor = url.slice(url.indexOf("#") + 1);
-          const details = document.querySelector(`#${anchor}`);
-          details.setAttribute("open", true);
-          try {
-            window.scrollTo(
-              0,
-              details.getBoundingClientRect().top + window.scrollY - 50
-            );
-          } catch {}
-        }
-      }
-
-      function setAnchorTag(id) {
-        let url = window.location.href;
-        if (url.includes("#")) {
-          url = url.replace(/#.*/i, `#${id}`);
-        } else {
-          url = `${url}#${id}`;
-        }
-        window.history.pushState({}, "", url);
-      }
-
-      function showCookies() {
-        const accepted = sessionStorage.getItem("cookieAccepted");
-        if (!accepted) {
-          document.getElementById("cookie").style.display = "flex";
-          return;
-        }
-        if (!Boolean(accepted)) {
-          rejectCookies();
-        }
-      }
-
-      function rejectCookies() {
-        sessionStorage.setItem("cookieAccepted", "false");
-        document.getElementById("cookie").style.display = "none";
-
-        var cookies = document.cookie.split(";");
-        for (var i = 0; i < cookies.length; i++) {
-          var cookie = cookies[i];
-          var eqPos = cookie.indexOf("=");
-          var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-          document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-        }
-      }
-
-      function acceptCookies() {
-        sessionStorage.setItem("cookieAccepted", "true");
-        document.getElementById("cookie").style.display = "none";
       }
     </script>
   </body>

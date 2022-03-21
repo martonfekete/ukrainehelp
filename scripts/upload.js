@@ -3,7 +3,7 @@ const ftp = require("ftp");
 const path = require("path");
 
 const distPath = path.resolve(__dirname, "../dist");
-const languages = ["en", "hu", "uk"];
+const languages = require("./constants").languages;
 const ftpClient = new ftp();
 
 ftpClient.on("ready", function () {
