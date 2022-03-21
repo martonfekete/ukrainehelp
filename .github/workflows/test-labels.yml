@@ -1,0 +1,23 @@
+name: Test translations
+
+on:
+  pull_request:
+    branches: [master]
+
+env:
+  GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+  GOOGLE_TRANSLATIONS_KEY: ${{ secrets.GOOGLE_TRANSLATIONS_KEY }}
+  DEFAULT_LANG: "uk"
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+          cache: "npm"
+      - run: npm ci
+      - run: npm run build:prod
+      - run: npm run test-labels
