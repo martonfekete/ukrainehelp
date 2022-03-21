@@ -27,9 +27,9 @@ async function getTranslations(key, apiKey) {
   }
 
   try {
-    const en = new Map([]);
-    const uk = new Map([]);
-    const hu = new Map([]);
+    const en = new Map([["{{LABEL}}", "EN"]]);
+    const uk = new Map([["{{LABEL}}", "UK"]]);
+    const hu = new Map([["{{LABEL}}", "HU"]]);
 
     console.log("Building dictionaries");
 
