@@ -21,7 +21,7 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body onclick="expandLang('none', event)" onload="showCookies()">
+  <body onclick="expandLang('none', event)" onload="bodyLoaded()">
     <nav>
       <ul role="navigation">
         <li>
@@ -73,11 +73,11 @@
       <section id="links" class="centered vertical">
         <h2>{{USEFUL_LINKS}}</h2>
         <div class="centered">
-          <a class="btn highlight" href="{{HELP_TRANSPORT_BKK_TIMETABLE_URL}}"
-            >{{HELP_TRANSPORT_BKK}}</a
+          <a class="btn highlight" href="{{TRANSPORT_BKK_TIMETABLE_URL}}"
+            >{{TRANSPORT_BKK}}</a
           >
-          <a class="btn highlight" href="{{HELP_TRANSPORT_AIR_BUD_URL}}"
-            >{{HELP_TRANSPORT_AIR_BUD}}</a
+          <a class="btn highlight" href="{{TRANSPORT_AIR_BUD_URL}}"
+            >{{TRANSPORT_AIR_BUD}}</a
           >
         </div>
       </section>
@@ -100,56 +100,13 @@
       </div>
     </footer>
 
+    <script src="{{JS_SRC}}/anchors.js"></script>
+    <script src="{{JS_SRC}}/cookies.js"></script>
+    <script src="{{JS_SRC}}/ui.js"></script>
     <script>
-      function expandLang(forceVal, e) {
-        const langSelector = document.querySelector("#lang ul");
-        if (forceVal) {
-          langSelector.style.display = forceVal;
-          if (e.target.parentElement.id !== "impressum") {
-            const impressum = document.querySelector("#impressum");
-            impressum.style.display = forceVal;
-          }
-          return;
-        }
-        const currentStyle = langSelector.style.display;
-        langSelector.style.display =
-          currentStyle === "block" ? "none" : "block";
-      }
-
-      function expandImpressum() {
-        const impressum = document.querySelector("#impressum");
-        const currentStyle = impressum.style.display;
-
-        impressum.style.display = currentStyle === "block" ? "none" : "block";
-      }
-
-      function showCookies() {
-        const accepted = sessionStorage.getItem("cookieAccepted");
-        if (!accepted) {
-          document.getElementById("cookie").style.display = "flex";
-          return;
-        }
-        if (!Boolean(accepted)) {
-          rejectCookies();
-        }
-      }
-
-      function rejectCookies() {
-        sessionStorage.setItem("cookieAccepted", "false");
-        document.getElementById("cookie").style.display = "none";
-
-        var cookies = document.cookie.split(";");
-        for (var i = 0; i < cookies.length; i++) {
-          var cookie = cookies[i];
-          var eqPos = cookie.indexOf("=");
-          var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-          document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-        }
-      }
-
-      function acceptCookies() {
-        sessionStorage.setItem("cookieAccepted", "true");
-        document.getElementById("cookie").style.display = "none";
+      function bodyLoaded() {
+        showCookies();
+        scrollToAnchor();
       }
     </script>
   </body>

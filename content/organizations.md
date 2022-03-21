@@ -1,4 +1,3 @@
-
 <div>
 
 <style>
@@ -81,6 +80,12 @@
 </div>
 
 <div class="btn highlight org">
+	<a class="logo" href="https://www.evangelikus.hu/hireink/itthon/informaciok-az-ukrajna-orosz-megszallasa-miatt-bajba-kerultek-megsegiteserol"><img class="" src="{{IMG_SRC}}/icon_evangelikus.jpg" title="{{ORGS_EVANGELIC}}"></a>
+	<a class="center"href="https://www.evangelikus.hu/hireink/itthon/informaciok-az-ukrajna-orosz-megszallasa-miatt-bajba-kerultek-megsegiteserol">{{ORGS_EVANGELIC}}</a>
+	<a class="fb" href="https://www.facebook.com/evangelikus" target="_blank"><img src="{{IMG_SRC}}/icon_facebook.png"></a>
+</div>
+
+<div class="btn highlight org">
 	<a class="logo" href="http://www.hisz.hu/"><img class="" src="{{IMG_SRC}}/icon_hisz.jpg"title="{{ORGS_HISZ}}"></a>
 	<a class="center"href="http://www.hisz.hu/">{{ORGS_HISZ}}</a>
 	<a class="fb" href="https://www.facebook.com/hiszhivatalos" target="_blank"><img src="{{IMG_SRC}}/icon_facebook.png"></a>
@@ -97,6 +102,5 @@
 	<a class="center"href="https://aosz.hu/">{{ORGS_AUTISTIC}}</a>
 	<a class="fb" href="https://www.facebook.com/minden100" target="_blank"><img src="{{IMG_SRC}}/icon_facebook.png"></a>
 </div>
-
 </center>
 </div>

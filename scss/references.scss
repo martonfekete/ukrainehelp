@@ -1,0 +1,50 @@
+@import "_colors";
+
+.reference {
+  position: relative;
+  top: 0.1rem;
+  display: inline-block;
+  margin-left: 0.25rem;
+  color: $secondary !important;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(../img/source.png) no-repeat 0 0;
+    background-size: contain;
+    color: inherit;
+  }
+
+  &__tooltip {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 150px;
+    bottom: 150%;
+    left: 50%;
+    margin-left: calc(-75px - 0.5rem);
+    padding: 0.5rem;
+    background-color: $secondary;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: $highlight;
+    font-size: smaller;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $secondary transparent transparent transparent;
+    }
+  }
+  &:hover {
+    .reference__tooltip {
+      display: block;
+    }
+  }
+}

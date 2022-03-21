@@ -2,8 +2,11 @@
 
 #### Development team
 
-- Developer: Marton Fekete
-- Editor: Andrea Kis
+- Developer: [Marton Fekete](https://github.com/martonfekete/)
+- Editor: [Andrea Kis](https://github.com/andreakis)
+- Contributors: [Laszlo Elek](https://github.com/borazslo)
+
+##### [CONTRIBUTE](https://github.com/martonfekete/ukrainehelp)
 
 #### Facebook/online marketing
 
@@ -13,10 +16,10 @@
 
 - Vera Czifra
 - Miriam Darab
-- Boglarka Kincses
 - Eva Aliz Kapusi-Varszegi
-- Zsolt Zsombor
+- Boglarka Kincses
 - Sandor Torbics
-- and the 2 additional people who chose to remain anonymous after providing valuable information or translations
+- Zsolt Zsombor
+- and the 3 additional people who chose to remain anonymous while providing valuable information or translations
 
 [invert-btn_Contact us](mailto:ukrainehelphu@gmail.com)

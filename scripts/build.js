@@ -14,7 +14,7 @@
     fs.mkdirSync(`${distPath}`);
   }
 
-  const languages = ["en", "hu", "uk"];
+  const languages = require("./constants").languages;
   const translator = require("./build_helpers/translator");
   const translations = await translator.getTranslations();
 
@@ -110,6 +110,14 @@
   console.log("Copying images...");
   fse.copySync(path.resolve(__dirname, "../img"), `${distPath}/img`);
   console.log(`Images copied to ${distPath}/img`);
+
+  console.log("Copying files...");
+  fse.copySync(path.resolve(__dirname, "../files"), `${distPath}/files`);
+  console.log(`Files copied to ${distPath}/files`);
+
+  console.log("Copying js...");
+  fse.copySync(path.resolve(__dirname, "../js"), `${distPath}/js`);
+  console.log(`Files copied to ${distPath}/js`);
 
   fs.unlinkSync(source);
 })();
