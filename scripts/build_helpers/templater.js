@@ -82,9 +82,9 @@ const createIndexHtml = () => {
 
   console.log("Replacing TIMESTAMP...");
   const time = new Date();
-  const timeString = `${time.toLocaleDateString(
-    "hu"
-  )} ${time.getHours()}:${time.getMinutes()}`;
+  const timeString = `${time.toLocaleDateString("hu", {
+    timeZone: "Europe/Budapest",
+  })} ${time.getHours()}:${time.getMinutes()}`;
   template = template.replace(/\[\[TIMESTAMP\]\]/g, timeString);
   console.log("TIMESTAMP replaced");
 
