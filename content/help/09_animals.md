@@ -1,7 +1,7 @@
-{{HELP_ANIMALS_INFO}} [{{HELP_ANIMALS_INFO_LINK}}]({{HELP_ANIMALS_INFO_URL}})
+{{_INFO}} [{{_INFO_LINK}}]({{_INFO_URL}})
 
-{{HELP_ANIMALS_VETS}} [{{HELP_ANIMALS_VETS_LINK}}](http://maokbudapest.hu/ukr/)
+{{_VETS}} [{{_VETS_LINK}}](http://maokbudapest.hu/ukr/)
 
-{{HELP_ANIMALS_RESCUE}} [{{HELP_ANIMALS_RESCUE_LINK}}]({{HELP_ANIMALS_RESCUE_URL}})
+{{_RESCUE}} [{{_RESCUE_LINK}}]({{_RESCUE_URL}})
 
-{{HELP_ANIMALS_EUROPE}} [{{MORE_INFO}}](https://vetsforukraine.com/vets-for-animals/)
+{{_EUROPE}} [{{MORE_INFO}}](https://vetsforukraine.com/vets-for-animals/)
