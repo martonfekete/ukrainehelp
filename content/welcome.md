@@ -15,15 +15,16 @@
 [btn-small\_{{DOWNLOAD_INFO}} ({{LANG_HU}})]({{FILE_SRC}}/refugee_victim_info_HU.pdf)
 [btn-small\_{{DOWNLOAD_INFO}} ({{LANG_UK}})]({{FILE_SRC}}/refugee_victim_info_UK.pdf)
 
+### {{WELCOME_EDUCATION}}
+
+{{CHILDREN-EDUCATION_SCHOOLS_ENROLL}} [{{MORE_INFO}}]({{CHILDREN-EDUCATION_SCHOOLS_ENROLL_URL}})
+[ref_UNHCR](https://help.unhcr.org/###3/16/2022)
+
 ### {{WELCOME_BUDAPEST_PONT}}
 
 {{WELCOME_BUDAPEST_PONT_INFO}}
 
 [btn\_{{WELCOME_BUDAPEST_PONT_LINK}}]({{WELCOME_BUDAPEST_PONT_URL}})
-
-### {{HELP_PHONE}}
-
-{{HELP_PHONE_YETTEL}}
 
 ### {{WELCOME_TRAVEL}}
 

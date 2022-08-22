@@ -6,10 +6,16 @@
 {{CHILDREN-EDUCATION_KINDERGARDEN_MANDATORY}}
 [ref_AJBH](https://www.ajbh.hu/web/guest/fontos-informaciok-az-ukrajnabol-menekulok-szamara###3/16/2022)
 
+{{CHILDREN-EDUCATION_SCHOOLS_ENROLL}} [{{MORE_INFO}}]({{CHILDREN-EDUCATION_SCHOOLS_ENROLL_URL}})
+[ref_UNHCR](https://help.unhcr.org/###3/16/2022)
+
 ### {{CHILDREN-EDUCATION_SCHOOLS}}
 
 {{CHILDREN-EDUCATION_SCHOOLS_MANDATORY}} [{{MORE_INFO}}](https://kk.gov.hu/tankeruletek)
 [ref_AJBH](https://www.ajbh.hu/web/guest/fontos-informaciok-az-ukrajnabol-menekulok-szamara###3/16/2022)
+
+{{CHILDREN-EDUCATION_SCHOOLS_ENROLL}} [{{MORE_INFO}}]({{CHILDREN-EDUCATION_SCHOOLS_ENROLL_URL}})
+[ref_UNHCR](https://help.unhcr.org/###3/16/2022)
 
 ### {{CHILDREN-EDUCATION_DAYCARE}}
 
